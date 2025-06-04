@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title="Toplama";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+        <form method="post">
+            Bu bir mvc örneğidir.<br />
+            <input type="number" name="sayi1" /><br />
+            <input type="number" name="sayi2" /><br />
+            <input type="submit" value="Topla" />
+
+        </form>
+        @if(ViewBag.Toplam != null)
+            {
+                <h3>Toplam: @ViewBag.Toplam</h3>
+            }
+    </div>
+</body>
+</html>
